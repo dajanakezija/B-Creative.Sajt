@@ -39,3 +39,9 @@
 .search_picture{
     width: 35px;
 }
+
+.picture{
+    width: 100%;
+    height: 500px;
+    background-color: blue;
+}
