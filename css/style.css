@@ -9,8 +9,8 @@
     background-color: white;
 }
 .header_logo{
-    width: 45%;
-    padding: 15px 0px 10px 140px;
+    width: 35%;
+    padding: 15px 0px 10px 150px;
 }
 .logo_picture{
     height: 60px;
@@ -20,7 +20,10 @@
     width: 45%;
     height: 100%;
     font-size: 16px;
-    padding: 45px 0px 15px 90px;
+    padding: 45px 0px 15px 120px;
+}
+.header_meni a:hover{
+    color: orange;
 }
 .header_option{
     text-decoration: none;
@@ -30,7 +33,7 @@
     color: black;
 }
 .header_search{
-    width: 15%;
+    width: 20%;
     padding: 35px 0px 30px 0px;
 }
 .search_picture{
