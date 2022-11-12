@@ -39,9 +39,15 @@
 .search_picture{
     width: 35px;
 }
+.header_search a:hover{
+    color: orange;
+}
 
 .picture{
     width: 100%;
     height: 500px;
-    background-color: blue;
+}
+.banner_picture_{
+    width: 100%;
+    height: 500px;
 }
