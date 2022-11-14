@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: pointer;
 }
 .header{
     display: flex;
@@ -39,15 +40,444 @@
 .search_picture{
     width: 35px;
 }
-.header_search a:hover{
-    color: orange;
-}
 
 .picture{
     width: 100%;
     height: 500px;
 }
-.banner_picture_{
-    width: 100%;
+.banner{
+    background-image: url(banner-1920x900px.jpg);
+    background-position: center;
+    background-size: cover;
     height: 500px;
+}
+.banner_orange{
+    height: 500px;
+    animation-name: banner_orange;
+    background: linear-gradient(to right, rgb(255, 89, 0), orange);
+    animation-duration: 2s;
+    animation-direction: normal;
+    opacity: 0.8;
+}
+
+@keyframes banner_orange{
+    0% {background-color: orange;
+        width: 0%;
+    }
+    
+    100% {
+        background-color: orange; 
+        width: 100%;  
+    }
+}
+.banner_text{
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding-top: 130px;
+}
+.web_text{
+    font-size: 83px;
+    color: white;
+}
+.dizajn_text{
+    font-size: 35px;
+}
+.btn_kn{
+    height: 50px;
+    width: 200px;
+    border-radius: 50px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+}
+h3, h1, button{
+    padding: 15px;
+}
+.o_nama{
+    height: 430px;
+    width: 100%;
+}
+.tekst_o_nama{
+    height: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.naziv{
+    font-weight: bolder;
+    font-size: 15px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+.linija{
+    margin: auto;
+    width: 80px;
+    height: 5px;
+    background: linear-gradient(to right, red, orange);
+}
+
+.tekst{
+    padding-top: 30px;
+    font-size: 10px;
+    line-height: 20px;
+}
+.ikonice{
+    height: 200px;
+    display: flex;
+    justify-content:space-evenly;
+}
+.ikonica1{
+    height: 200px;
+    width: 250px;
+    text-align: center;
+}
+.ikonica2{
+    height: 200px;
+    width: 250px;
+    text-align: center;
+}
+.ikonica3{
+    height: 200px;
+    width: 250px;
+    text-align: center;
+}
+.ikonica_1{
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 100px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+.ikonica_2{
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 100px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+.ikonica_3{
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 100px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+.linija_dr{
+    margin: auto;
+    text-align: center;
+    width: 50px;
+    height: 3px;
+    background: black;
+}
+
+.text_ikonica{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 9px;
+}
+.ispis_ikonica{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 8px;
+    padding-right: 12px;
+    padding-top: 15px;
+}
+.slika_ikonica{
+    width: 45px;
+    padding-top: 28px;
+}
+.portfolio_naslov{
+    text-align: center;
+    height: 140px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.naziv_portfolio{
+    font-weight: bolder;
+    font-size: 15px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+.portfolio_btn{
+    margin: auto;
+    margin-top: 30px ;
+    text-align: center;
+}
+.btn{
+    padding: 10px;
+    border: 1px solid black;
+}
+.portfolio_slike{
+    height: 700px;
+    margin-top: 40px;
+    background-color: rgb(185, 150, 84);
+}
+.portfolio_slike{
+    background-clip: content-box;
+     
+}
+.portfolio_br{
+    height: 100px;
+    background-color: orangered;
+}
+.blog{
+    height: 550px;
+}
+.blog_naslov{
+    text-align: center;
+    height: 140px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.naziv_blog{
+    font-weight: bolder;
+    font-size: 15px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+.tekstbl{
+    padding-top: 30px;
+    font-size: 10px;
+}
+
+.blog_slike{
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.kocka{
+    width: 220px;
+    height: 220px;
+}
+.datum{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 119, 0);
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+    padding-top: 7px;
+    font-size: 13px;
+}
+.datum span{
+    color: white;
+}
+.kocka img{
+    width: 100%;
+    height: 100%;
+}
+.kocka h3{
+    margin: auto;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.kocka h4{
+    margin: auto;
+    text-align: center;
+    color: gray;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.kocka a{
+    margin: auto;
+    padding-left: 73px;
+    text-align: center;
+    text-decoration: none;
+    color: orange;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.kocka a:hover{
+    color: rgb(235, 188, 131);
+}
+.nas_tim{
+    text-align: center;
+    height: 500px;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(234, 222, 226);
+}
+.naziv_nas_tim{
+    font-weight: bolder;
+    font-size: 15px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+.tim_kocke{
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.nas_tim_slike{
+    width: 190px;
+    height: 220px;
+    
+}
+.hover_kocka{
+    margin: auto;
+    width: 175px;
+    height: 205px;
+    position: absolute;
+    background: linear-gradient(to right, rgb(255, 89, 0), orange);
+    opacity: 0.8;
+}
+.kontakt{
+    height: 570px;
+}
+.kontakt_naslov{
+    text-align: center;
+    height: 140px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.naziv_kontakt{
+    font-weight: bolder;
+    font-size: 15px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+.kontakt_tabela{
+    height: 400px;
+    margin-top: 20px;
+    display: flex;
+}
+
+
+.search{
+    height: 200px;
+    background-color: darkseagreen;
+}
+.footer{
+    height: 50px;
+    background-color: hotpink;
+}
+
+.input-container{
+    height: 100%;
+    width: 60%;
+}
+.kontakt_krug{
+    height: 100%;
+    width: 40%;
+}
+input {
+    border: 1px solid black;
+    margin: 15px 15px 15px 155px;
+    padding: 9px;
+    font-size: 9px;
+    font-weight: bold;
+    width: 500px;
+    height: 40px;
+}
+textarea {
+    border: 1px solid black;
+    margin: 15px 15px 15px 155px;
+    padding: 9px;
+    font-size: 9px;
+    font-weight: bold;
+    width: 500px;
+    height: 130px;
+}
+.btn_pošalji{
+    border: 1px solid black;
+    margin: 15px 15px 15px 350px;
+    padding: 9px;
+    font-size: 9px;
+    font-weight: bold;
+    width: 120px;
+    height: 35px;
+}
+.krug1{
+    display: flex;
+  width: 100%;
+  height: 25%;
+}
+.krug2{
+    display: flex;
+    width: 100%;
+ height: 25%;
+}
+.krug3{
+    display: flex;
+    width: 100%;
+ height: 25%;
+}
+.krug_1{
+    height: 100%;
+    width: 20%;
+    padding-top: 20px;
+}
+.krug_2{
+    padding-top: 20px;
+    padding-left: 10px;
+    height: 100%;
+    width: 80%;
+}
+.adresa{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 9px;
+}
+.adresa1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+}
+.krug_3{
+    height: 100%;
+    width: 20%;
+    padding-top: 20px;
+}
+.krug_4{
+    padding-top: 20px;
+    padding-left: 10px;
+    height: 100%;
+    width: 80%;
+}
+.krug_5{
+    height: 100%;
+    width: 20%;
+    padding: 20px;
+}
+.krug_6{
+    padding-top: 20px;
+    padding-left: 10px;
+    height: 100%;
+    width: 80%;
+}
+.adresa_krug{ 
+    margin: auto;
+    text-align: center;
+    border-radius: 100%;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+}
+.slicica_adrese{
+    width: 20px;
+    padding-top: 13px;
+    padding-right: 3px;
+
+}
+.slicica_emaila{
+    width: 20px;
+    padding-top: 13px;
+}
+.slicina_telefona{
+    width: 20px;
+    padding-top: 13px;
 }
